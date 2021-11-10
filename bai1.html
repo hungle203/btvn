@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let so1 = parseInt(prompt('A= '));
+    let so2 = parseInt(prompt('B= '));
+    let so3 = parseInt(prompt('C= '));
+    if (so1 === so2 && so1 === so3) {
+        alert('ba so A,B,C bang nhau= ' + so1);
+    } else if (so1 === so2) {
+        if (so1 > so3) {
+            alert('So lon nhat la A,B= ' + so1);
+        } else {
+            alert('So lon nhat la C= ' + so3);
+        }
+    } else if (so1 > so2) {
+        if (so1 === so3) {
+            alert('So lon nhat la A,C= ' + so1);
+        } else if (so1 > so3) {
+            alert('So lon nhat la A= ' + so1);
+        } else {
+            alert('So lon nhat la C= ' + so3);
+        }
+    } else if (so2 === so3) {
+        alert('So lon nhat la B,C= ' + so2);
+    } else if (so2 > so3) {
+        alert('So lon nhat la B= ' + so2);
+    } else {
+        alert('So lon nhat la C= ' + so3);
+    }
+
+
+</script>
+</body>
+</html>
